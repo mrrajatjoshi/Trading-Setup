@@ -1,0 +1,14 @@
+This setup is designed to streamline the process of opening tickers in Tradingview and DAS Trader.
+I achieve this with a combination of Chrome Extension, Autohotkey Script and DAS Trader hotkeys.
+
+Follow the below steps to setup your system.
+
+1. Download and install Autohotkey
+2. Place the "CopyPasteTickers.ahk" file in the Startup folder of your PC so it runs when the machine is turned on.
+3. In Chrome, under the extensions enable developer mode.
+4. Download the "short_text_copier" folder and save it somewhere on your computer
+5. In Chtome, under the extensions, click on Load unpacked and select the "short_text_copier" folder to import it into chrome.
+6. Pin the extension
+7. In the settings for the extension, enable it and feel free to add the links from the "Stock Links.txt" file in the "short_text_copier resources" folder or any other links you may want, essentially the placeholder text "TICKERTEXT" will be replaced and new URLs will be opened by this extension if needed.
+8. Create a DAS Trader hotkey "Shift+M" to change the window focus to the Montage. Oh, also, give your montage window a name in the frame window configuration.
+9. Click on an element in Chrome when it is outlined in red to copy the text. By default it should only copy short text. 
