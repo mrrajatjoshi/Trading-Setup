@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 12px;
+      width: 260px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+      width: 80px;
+      margin-left: 5px;
+    }
+
+    hr {
+      margin: 16px 0;
+    }
+
+    h4 {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-height: 140px;
+      overflow-y: auto;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8f8f8;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    button {
+      background: #d9534f;
+      color: white;
+      border: none;
+      padding: 2px 6px;
+      cursor: pointer;
+      font-size: 12px;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <label>
+    <input type="checkbox" id="enableBold" />
+    Bold Text
+  </label>
+  <label>
+    <input type="checkbox" id="enableFontSize" />
+    Increase Font Size
+  </label>
+  <label>
+    Font Size:
+    <input type="number" id="fontSize" min="0.5" step="0.01" value="1.00" />
+  </label>
+
+  <hr>
+  <h4>Enabled Sites</h4>
+  <ul id="domainList"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>

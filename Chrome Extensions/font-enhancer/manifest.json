@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Global Font Enhancer",
+  "version": "1.0",
+  "description": "Bold and enlarge all text globally with a toggle.",
+  "permissions": ["storage", "scripting", "activeTab", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

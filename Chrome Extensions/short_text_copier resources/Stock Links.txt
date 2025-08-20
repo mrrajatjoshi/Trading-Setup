@@ -1,0 +1,4 @@
+https://finviz.com/quote.ashx?t=TICKERTEXT
+https://dilutiontracker.com/app/search/TICKERTEXT
+http://bamsec.com/entity-search/search?q=TICKERTEXT
+

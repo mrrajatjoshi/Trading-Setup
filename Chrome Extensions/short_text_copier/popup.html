@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 15px;
+        padding: 0;
+        width: 260px;
+        color: #333;
+      }
+
+      h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .section {
+        margin-bottom: 16px;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 100px;
+        margin-top: 8px;
+        font-size: 13px;
+        padding: 6px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        resize: vertical;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 6px 12px;
+        font-size: 14px;
+        background-color: #0078d4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+
+      button:hover {
+        background-color: #005ea6;
+      }
+
+      footer {
+        font-size: 11px;
+        color: #777;
+        margin-top: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <label>
+        <input type="checkbox" id="toggleExtension" />
+        Enable Short Text Copier
+      </label>
+    </div>
+
+    <div class="section">
+      <label for="linkTemplates"><strong>Link Templates</strong></label>
+      <textarea id="linkTemplates" placeholder="Use TICKERTEXT as a placeholder..."></textarea>
+    </div>
+
+    <div class="section">
+      <button id="saveLinks">Save</button>
+    </div>
+
+    <footer>v1.4 • Powered by Short Text Copier</footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
